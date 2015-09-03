@@ -13,16 +13,16 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 67
+content-length: 66
 
-/Areas/GnosisSocialNetworks/Views/Twitter/TwitterSummaryCard.cshtml
+/Areas/GnosisSocialNetworks/Views/Twitter/TwitterPlayerCard.cshtml
 ----field----
 field: {DDAB263E-B42E-419A-AA6F-081B7393CA38}
 name: Model
 key: model
-content-length: 73
+content-length: 72
 
-/sitecore/layout/Models/GnosisSocialNetworks/Twitter/Twitter Summary Card
+/sitecore/layout/Models/GnosisSocialNetworks/Twitter/Twitter Player Card
 ----field----
 field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
 name: Open Properties after Add
@@ -47,7 +47,7 @@ content-length: 163
 ----version----
 language: en
 version: 1
-revision: 31d730c5-7d7b-4594-b2e3-25be5f99dec3
+revision: 390af8be-b2bd-492a-8fdb-07206d2e0c48
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31d730c5-7d7b-4594-b2e3-25be5f99dec3
+390af8be-b2bd-492a-8fdb-07206d2e0c48
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150903T150408Z
+20150903T172233Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

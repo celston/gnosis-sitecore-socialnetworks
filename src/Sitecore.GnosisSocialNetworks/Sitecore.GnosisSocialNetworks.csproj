@@ -102,6 +102,7 @@
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\_Primary.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\_Secondary.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\TwitterAppCard.cshtml" />
+    <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\TwitterPlayerCard.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

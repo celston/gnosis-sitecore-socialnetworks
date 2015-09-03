@@ -204,147 +204,160 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App Google Play ID.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\Google Play ID.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App Google Play ID</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\Google Play Name.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App Google Play Name</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\Google Play URL.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App Google Play URL</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\iPad ID.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App iPad ID</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\iPad Name.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App iPad Name</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\iPad URL.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App iPad URL</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\iPhone ID.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App iPhone ID</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\iPhone Name.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App iPhone Name</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Fields\Twitter Card Information\iPhone URL.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <SitecoreName>Twitter Card App iPhone URL</SitecoreName>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App Google Play Name.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator Fields\Twitter Card Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App Google Play URL.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator Fields\Twitter Card Information\Twitter Card Creator.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App iPad ID.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator ID Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App iPad Name.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator ID Fields\Twitter Card Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App iPad URL.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator ID Fields\Twitter Card Information\Twitter Card Creator ID.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App iPhone ID.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App iPhone Name.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Fields\Twitter Card Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter App Card Information\Twitter Card Information\Twitter Card App iPhone URL.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Fields\Twitter Card Information\Twitter Card Description.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator ID Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Fields\Twitter Card Information\Twitter Card Image.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator ID Information\Twitter Card Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Fields\Twitter Card Information\Twitter Card Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator ID Information\Twitter Card Information\Twitter Card Creator ID.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Fields\Twitter Card Site Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator Information\Twitter Card Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Fields\Twitter Card Site Information\Twitter Card Site ID.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Creator Information\Twitter Card Information\Twitter Card Creator.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Fields\Twitter Card Site Information\Twitter Card Site.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Information\Twitter Card Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Fields\Twitter Card Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Information\Twitter Card Information\Twitter Card Description.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Fields\Twitter Card Information\Twitter Card Site ID Override.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Information\Twitter Card Information\Twitter Card Image.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Fields\Twitter Card Information\Twitter Card Site Override.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Secondary Information\Twitter Card Information\Twitter Card Title.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields\Twitter Card Information.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Information\Twitter Card Site Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields\Twitter Card Information\Twitter Card Player Height.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Information\Twitter Card Site Information\Twitter Card Site ID.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields\Twitter Card Information\Twitter Card Player Stream Content Type.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Information\Twitter Card Site Information\Twitter Card Site.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields\Twitter Card Information\Twitter Card Player Stream.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Information.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields\Twitter Card Information\Twitter Card Player Width.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Information\Twitter Card Information.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Information\Twitter Card Information\Twitter Card Site ID Override.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Card Site Override Information\Twitter Card Information\Twitter Card Site Override.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Information.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Information\Twitter Card Information.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Information\Twitter Card Information\Twitter Card Player Height.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Information\Twitter Card Information\Twitter Card Player Stream.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Information\Twitter Card Information\Twitter Card Player Width.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Information\Twitter Card Information\Twitter Card Player.item">
+    <SitecoreItem Include="sitecore\templates\GnosisSocialNetworks\Field Sections\Twitter\Twitter Player Card Fields\Twitter Card Information\Twitter Card Player.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

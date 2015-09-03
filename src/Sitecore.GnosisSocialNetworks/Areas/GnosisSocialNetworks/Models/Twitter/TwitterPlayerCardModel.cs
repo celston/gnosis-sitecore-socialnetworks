@@ -11,5 +11,15 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
         {
             get { return "player"; }
         }
+
+        public bool ShowPlayerStream
+        {
+            get { return !RenderingItemFieldIsNullOrWhitespace("Twitter Card Player Stream"); }
+        }
+
+        public bool ShowPlayerStreamContentType
+        {
+            get { return ShowPlayerStream && !RenderingItemFieldIsNullOrWhitespace("Twitter Card Player Stream Content Type"); }
+        }
     }
 }
