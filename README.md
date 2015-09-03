@@ -11,7 +11,7 @@ All renderings are implemented using MVC.  Respective .cshtml files are all stor
 See the Twitter's own documentation:
 https://dev.twitter.com/cards/overview
 
-I have attempted to arrange the fields outlined in the documentation to the specific templates and renderings.  See the spreadsheet "Twitter Card Field Matrix" for which fields are used with which card type.
+I have attempted to arrange the fields outlined in the documentation to the specific templates and renderings.  See the spreadsheet "Twitter Card Field Matrix" within the "doc" directory for which fields are used with which card type.
 
 ### Usage
 
@@ -44,4 +44,4 @@ There are four MVC view renderings available, one for each card type.  The relat
 
 For each rendering, they will only accept items inherited from the respective base template as a data source.
 
-If you know you only ever be using one rendering for a given layout, you can use the @Html.Sitecore().Rendering("/sitecore/path") method to embed.  Otherwise, assign the necessary rendering to a placeholder.  In either case, the rendering should be called from within the <HEAD> tag of you page.
+If you know you only ever be using one rendering for a given layout, you can use the @Html.Sitecore().Rendering("/sitecore/path") method to embed.  Otherwise, assign the necessary rendering to a placeholder.  In either case, the rendering should be called from within the HEAD tag of you page.
