@@ -36,5 +36,10 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
         {
             return (ImageField)item.Fields[fieldName];
         }
+
+        public LinkField GetLinkField(Item item, string fieldName)
+        {
+            return (LinkField)item.Fields[fieldName];
+        }
     }
 }

@@ -2,11 +2,11 @@
 
 @if (Model.ShowTitle)
 {
-    <meta name="twitter:title" content="@Html.Sitecore().Field("Twitter Card Title")" />
+    <meta name="twitter:title" content="@Model.Title" />
 }
 @if (Model.ShowDescription)
 {
-    <meta name="twitter:description" content="@Html.Sitecore().Field("Twitter Card Description")" />
+    <meta name="twitter:description" content="@Model.Description" />
 }
 @if (Model.ShowImageUrl)
 {

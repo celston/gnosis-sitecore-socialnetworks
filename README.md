@@ -2,6 +2,10 @@
 
 This is a Sitecore module that attempts to support several points of integration with various social networks.
 
+## Version Support
+
+Currently, this built against the 8.0 (rev. 150621) build of Sitecore.
+
 ## Rendering Support
 
 All renderings are implemented using MVC.  Respective .cshtml files are all stored within /Areas/GnosisSocialNetworks/Views.

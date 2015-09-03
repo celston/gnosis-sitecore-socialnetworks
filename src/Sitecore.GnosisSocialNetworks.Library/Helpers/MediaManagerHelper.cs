@@ -12,8 +12,6 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
 {
     public class MediaManagerHelper
     {
-        private readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
-        
         #region Singleton Setup
 
         private readonly static Lazy<MediaManagerHelper> lazy = new Lazy<MediaManagerHelper>(() =>
@@ -35,6 +33,14 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
 
         #endregion
 
+        #region Protected Fields
+
+        protected readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
+
+        #endregion
+
+        #region Public Methods
+
         public string GetImageFieldAbsoluteUrl(Item item, string fieldName)
         {
             ImageField field = fieldsHelper.GetImageField(item, fieldName);
@@ -46,6 +52,16 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
             return MediaManager.GetMediaUrl(field.MediaItem, BuildAbsoluteUrlMediaUrlOptions());
         }
 
+        public string GetMediaLinkFieldAbsoluteUrl(LinkField field)
+        {
+            if (field.TargetItem == null)
+            {
+                return null;
+            }
+            
+            return Sitecore.Resources.Media.MediaManager.GetMediaUrl(field.TargetItem, BuildAbsoluteUrlMediaUrlOptions());
+        }
+
         public MediaUrlOptions BuildAbsoluteUrlMediaUrlOptions()
         {
             return new MediaUrlOptions()
@@ -53,5 +69,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
                 AlwaysIncludeServerUrl = true
             };
         }
+
+        #endregion
     }
 }

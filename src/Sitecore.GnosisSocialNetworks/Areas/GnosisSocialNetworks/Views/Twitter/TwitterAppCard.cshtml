@@ -4,37 +4,37 @@
 @Html.Partial("~/Areas/GnosisSocialNetworks/Views/Twitter/_Secondary.cshtml")
 @if (Model.ShowAppIphoneName)
 {
-    <meta name="twitter:app:name:iphone" content="@Html.Sitecore().Field("Twitter Card App iPhone Name")"/>
+    <meta name="twitter:app:name:iphone" content="@Model.AppIphoneName" />
 }
 @if (Model.ShowAppIphoneId)
 {
-    <meta name="twitter:app:id:iphone" content="@Html.Sitecore().Field("Twitter Card App iPhone ID")" />
+    <meta name="twitter:app:id:iphone" content="@Model.AppIphoneId"/>
 }
 @if (Model.ShowAppIphoneUrl)
 {
-    <meta name="twitter:app:url:iphone" content="@Html.Sitecore().Field("Twitter Card App iPhone URL")" />
+    <meta name="twitter:app:url:iphone" content="@Model.AppIphoneUrl"/>
 }
 @if (Model.ShowAppIpadName)
 {
-    <meta name="twitter:app:name:ipad" content="@Html.Sitecore().Field("Twitter Card App iPad Name")" />
+    <meta name="twitter:app:name:ipad" content="@Model.AppIpadName"/>
 }
 @if (Model.ShowAppIpadId)
 {
-    <meta name="twitter:app:id:ipad" content="@Html.Sitecore().Field("Twitter Card App iPad ID")" />
+    <meta name="twitter:app:id:ipad" content="@Model.AppIpadId"/>
 }
 @if (Model.ShowAppIpadUrl)
 {
-    <meta name="twitter:app:url:ipad" content="@Html.Sitecore().Field("Twitter Card App iPad URL")" />
+    <meta name="twitter:app:url:ipad" content="@Model.AppIpadUrl" />
 }
 @if (Model.ShowAppGooglePlayName)
 {
-    <meta name="twitter:app:name:googleplay" content="@Html.Sitecore().Field("Twitter Card App Google Play Name")" />
+    <meta name="twitter:app:name:googleplay" content="@Model.AppGooglePlayName" />
 }
 @if (Model.ShowAppGooglePlayId)
 {
-    <meta name="twitter:app:id:googleplay" content="@Html.Sitecore().Field("Twitter Card App Google Play ID")" />
+    <meta name="twitter:app:id:googleplay" content="@Model.AppGooglePlayId" />
 }
 @if (Model.ShowAppGooglePlayUrl)
 {
-    <meta name="twitter:app:url:googleplay" content="@Html.Sitecore().Field("Twitter Card App Google Play URL")" />
+    <meta name="twitter:app:url:googleplay" content="@Model.AppGooglePlayUrl" />
 }

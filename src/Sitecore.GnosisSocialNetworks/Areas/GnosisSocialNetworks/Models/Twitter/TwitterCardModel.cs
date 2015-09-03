@@ -59,20 +59,24 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             }
         }
 
+        public string Title
+        {
+            get { return RenderingItem["Twitter Card Title"]; }
+        }
+
         public bool ShowTitle
         {
-            get
-            {
-                return !RenderingItemFieldIsNullOrWhitespace("Twitter Card Title");
-            }
+            get { return !String.IsNullOrWhiteSpace(Title); }
+        }
+
+        public string Description
+        {
+            get { return RenderingItem["Twitter Card Description"]; }
         }
 
         public bool ShowDescription
         {
-            get
-            {
-                return !RenderingItemFieldIsNullOrWhitespace("Twitter Card Description");
-            }
+            get { return !String.IsNullOrWhiteSpace(Description); }
         }
     }
 }

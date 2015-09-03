@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Helpers\FieldsHelper.cs" />
     <Compile Include="Helpers\ItemsHelper.cs" />
+    <Compile Include="Helpers\LinksHelper.cs" />
     <Compile Include="Helpers\MediaManagerHelper.cs" />
     <Compile Include="Models\BaseRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -19,6 +19,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Models
         protected readonly MediaManagerHelper mediaManagerHelper = MediaManagerHelper.Instance;
         protected readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
         protected readonly ItemsHelper itemsHelper = ItemsHelper.Instance;
+        protected readonly LinksHelper linksHelper = LinksHelper.Instance;
 
         #endregion
 
@@ -56,6 +57,11 @@ namespace Sitecore.GnosisSocialNetworks.Library.Models
         protected bool RenderingItemFieldIsNullOrWhitespace(string fieldName)
         {
             return String.IsNullOrWhiteSpace(RenderingItem[fieldName]);
+        }
+
+        protected string GetRenderingItemLinkFieldAbsoluteUrl(string fieldName)
+        {
+            return linksHelper.GetLinkFieldAbsoluteUrl(RenderingItem, fieldName);
         }
 
         #endregion
