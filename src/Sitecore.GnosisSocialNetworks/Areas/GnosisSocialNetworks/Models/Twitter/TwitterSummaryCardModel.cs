@@ -7,6 +7,7 @@ using Sitecore.Data.Items;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Data.Fields;
 using Sitecore.Resources.Media;
+using Sitecore.GnosisSocialNetworks.Library.Attributes;
 
 namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitter
 {
@@ -20,13 +21,10 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             }
         }
 
-        public string Creator
-        {
-            get
-            {
-                return RenderingItem["Twitter Card Creator"];
-            }
-        }
+        [SitecoreFieldRaw]
+        public string Creator { get; set; }
+        [SitecoreFieldRaw("Creator ID")]
+        public string CreatorId { get; set; }
 
         public bool ShowCreator
         {
@@ -43,15 +41,7 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
                 return false;
             }
         }
-
-        public string CreatorId
-        {
-            get
-            {
-                return RenderingItem["Twitter Card Creator ID"];
-            }
-        }
-
+        
         public bool ShowCreatorId
         {
             get

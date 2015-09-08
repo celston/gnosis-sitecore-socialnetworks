@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sitecore.GnosisSocialNetworks.Library.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,19 +13,28 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             get { return "app"; }
         }
 
-        public string AppIphoneName
-        {
-            get { return RenderingItem["Twitter Card App iPhone Name"]; }
-        }
-
+        [SitecoreFieldRaw("App iPhone Name")]
+        public string AppIphoneName { get; set; }
+        [SitecoreFieldRaw("App iPhone ID")]
+        public string AppIphoneId { get; set; }
+        [SitecoreFieldRaw("App iPhone URL")]
+        public string AppIphoneUrl { get; set; }
+        [SitecoreFieldRaw("App iPad Name")]
+        public string AppIpadName { get; set; }
+        [SitecoreFieldRaw("App iPad ID")]
+        public string AppIpadId { get; set; }
+        [SitecoreFieldRaw("App iPad URL")]
+        public string AppIpadUrl { get; set; }
+        [SitecoreFieldRaw("App Google Play Name")]
+        public string AppGooglePlayName { get; set; }
+        [SitecoreFieldRaw("App Google Play ID")]
+        public string AppGooglePlayId { get; set; }
+        [SitecoreFieldRaw("App Google Play URL")]
+        public string AppGooglePlayUrl { get; set; }
+        
         public bool ShowAppIphoneName
         {
             get { return !String.IsNullOrWhiteSpace(AppIphoneName); }
-        }
-
-        public string AppIphoneId
-        {
-            get { return RenderingItem["Twitter Card App iPhone ID"]; }
         }
 
         public bool ShowAppIphoneId
@@ -32,19 +42,9 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             get { return !String.IsNullOrWhiteSpace(AppIphoneId); }
         }
 
-        public string AppIphoneUrl
-        {
-            get { return RenderingItem["Twitter Card App iPhone URL"]; }
-        }
-
         public bool ShowAppIphoneUrl
         {
             get { return !String.IsNullOrWhiteSpace(AppIphoneUrl); }
-        }
-
-        public string AppIpadName
-        {
-            get { return RenderingItem["Twitter Card App iPad Name"]; }
         }
 
         public bool ShowAppIpadName
@@ -52,19 +52,9 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             get { return !String.IsNullOrWhiteSpace(AppIpadName); }
         }
 
-        public string AppIpadId
-        {
-            get { return RenderingItem["Twitter Card App iPad ID"]; }
-        }
-
         public bool ShowAppIpadId
         {
             get { return !String.IsNullOrWhiteSpace(AppIpadId); }
-        }
-
-        public string AppIpadUrl
-        {
-            get { return RenderingItem["Twitter Card App iPad URL"]; }
         }
 
         public bool ShowAppIpadUrl
@@ -72,29 +62,14 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             get { return !String.IsNullOrWhiteSpace(AppIpadUrl); }
         }
 
-        public string AppGooglePlayName
-        {
-            get { return RenderingItem["Twitter Card App Google Play Name"]; }
-        }
-
         public bool ShowAppGooglePlayName
         {
             get { return !String.IsNullOrWhiteSpace(AppGooglePlayName); }
         }
 
-        public string AppGooglePlayId
-        {
-            get { return RenderingItem["Twitter Card App Google Play ID"]; }
-        }
-
         public bool ShowAppGooglePlayId
         {
             get { return !String.IsNullOrWhiteSpace(AppGooglePlayId); }
-        }
-
-        public string AppGooglePlayUrl
-        {
-            get { return RenderingItem["Twitter Card App Google Play URL"]; }
         }
 
         public bool ShowAppGooglePlayUrl

@@ -1,4 +1,5 @@
 ﻿using Sitecore.Data.Fields;
+using Sitecore.GnosisSocialNetworks.Library.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,43 +14,25 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             get { return "player"; }
         }
 
-        public string Player
-        {
-            get { return RenderingItem["Twitter Card Player"]; }
-        }
-
-        public string PlayerHeight
-        {
-            get { return RenderingItem["Twitter Card Player Height"]; }
-        }
-
-        public string PlayerWidth
-        {
-            get { return RenderingItem["Twitter Card Player Width"]; }
-        }
-
-        public string PlayerStream { get; private set; }
+        [SitecoreFieldRaw]
+        public string Player { get; set; }
+        [SitecoreFieldRaw("Player Height")]
+        public string PlayerHeight { get; set; }
+        [SitecoreFieldRaw("Player Width")]
+        public string PlayerWidth { get; set; }
+        [SitecoreLinkFieldAbsoluteUrl("Player Stream")]
+        public string PlayerStream { get; set; }
+        [SitecoreFieldRaw("Stream Content Type")]
+        public string PlayerStreamContentType { get; set; }
 
         public bool ShowPlayerStream
         {
             get { return !String.IsNullOrWhiteSpace(PlayerStream); }
         }
-
-        public string PlayerStreamContentType
-        {
-            get { return RenderingItem["Twitter Card Player Stream Content Type"]; }
-        }
-
+        
         public bool ShowPlayerStreamContentType
         {
             get { return ShowPlayerStream && !String.IsNullOrWhiteSpace(PlayerStreamContentType); }
-        }
-
-        public override void Initialize(Mvc.Presentation.Rendering rendering)
-        {
-            base.Initialize(rendering);
-
-            PlayerStream = GetRenderingItemLinkFieldAbsoluteUrl("Twitter Card Player Stream");
         }
     }
 }

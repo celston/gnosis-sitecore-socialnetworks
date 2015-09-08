@@ -41,6 +41,16 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
 
         #region Public Methods
 
+        public string GetItemUrl(Item item)
+        {
+            if (item == null)
+            {
+                return null;
+            }
+
+            return LinkManager.GetItemUrl(item);
+        }
+
         public string GetItemAbsoluteUrl(Item item)
         {
             if (item == null)
@@ -62,6 +72,28 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
         public string GetLinkFieldAbsoluteUrl(Item item, string fieldName)
         {
             return GetLinkFieldAbsoluteUrl(fieldsHelper.GetLinkField(item, fieldName));
+        }
+
+        public string GetLinkFieldUrl(LinkField field)
+        {
+            if (field == null)
+            {
+                return null;
+            }
+
+            switch (field.LinkType.ToLower())
+            {
+                case "internal":
+                    return GetItemUrl(field.TargetItem);
+                case "media":
+                    return mediaManagerHelper.GetMediaLinkFieldUrl(field);
+                case "anchor":
+                    // Prefix anchor link with # if link if not empty
+                    return !string.IsNullOrEmpty(field.Anchor) ? "#" + field.Anchor : string.Empty;
+                default:
+                    // all others fallback
+                    return field.Url;
+            }
         }
 
         public string GetLinkFieldAbsoluteUrl(LinkField field)

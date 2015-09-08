@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 using Sitecore.Data.Items;
 
@@ -43,6 +44,13 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
             {
                 return lazyRootItem.Value;
             }
+        }
+
+        public string GetItemMachineName(Item item)
+        {
+            Regex regex = new Regex("[^a-z0-9]+");
+
+            return regex.Replace(item.Name.ToLower(), "-");
         }
     }
 }

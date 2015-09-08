@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\SitecoreCheckboxRenderingParameterAttribute.cs" />
+    <Compile Include="Attributes\SitecoreDataAttribute.cs" />
+    <Compile Include="Attributes\SitecoreFieldAttribute.cs" />
+    <Compile Include="Attributes\SitecoreFieldNamePrefixAttribute.cs" />
+    <Compile Include="Attributes\SitecoreFieldRawAttribute.cs" />
+    <Compile Include="Attributes\SitecoreFieldRawWithRootFallbackAttribute.cs" />
+    <Compile Include="Attributes\SitecoreImageFieldAbsoluteUrlAttribute.cs" />
+    <Compile Include="Attributes\SitecoreLinkFieldAbsoluteUrlAttribute.cs" />
+    <Compile Include="Attributes\SitecoreLinkFieldUrlAttribute.cs" />
     <Compile Include="Helpers\FieldsHelper.cs" />
     <Compile Include="Helpers\ItemsHelper.cs" />
     <Compile Include="Helpers\LinksHelper.cs" />
     <Compile Include="Helpers\MediaManagerHelper.cs" />
-    <Compile Include="Models\BaseRenderingModel.cs" />
+    <Compile Include="Mvc\Models\BaseRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

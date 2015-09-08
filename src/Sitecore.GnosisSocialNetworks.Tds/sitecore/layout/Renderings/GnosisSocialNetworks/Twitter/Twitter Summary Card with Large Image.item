@@ -38,6 +38,13 @@ content-length: 106
 
 /sitecore/templates/GnosisSocialNetworks/Base Templates/Twitter/Twitter Summary Card with Large Image Base
 ----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 39
+
+NetworkV2/16x16/id_card_information.png
+----field----
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
@@ -47,7 +54,7 @@ content-length: 163
 ----version----
 language: en
 version: 1
-revision: a35735ec-47e4-4325-ab38-233fad18bd42
+revision: e6d4b156-f393-4077-af84-2dbdd3587359
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a35735ec-47e4-4325-ab38-233fad18bd42
+e6d4b156-f393-4077-af84-2dbdd3587359
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150903T150507Z
+20150908T191701Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

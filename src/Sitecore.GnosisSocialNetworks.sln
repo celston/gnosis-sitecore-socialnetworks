@@ -9,6 +9,10 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.GnosisSocialNetwor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.GnosisSocialNetworks.Library", "Sitecore.GnosisSocialNetworks.Library\Sitecore.GnosisSocialNetworks.Library.csproj", "{AFA238A2-EBD5-4C9F-BF95-4A123346D2F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.GnosisToolkit", "Sitecore.GnosisToolkit\Sitecore.GnosisToolkit.csproj", "{772DA4F0-97AA-4616-85A2-93FCD9EB1E84}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.GnosisToolkit.Tds", "Sitecore.GnosisToolkit.Tds\Sitecore.GnosisToolkit.Tds.scproj", "{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,16 @@ Global
 		{AFA238A2-EBD5-4C9F-BF95-4A123346D2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA238A2-EBD5-4C9F-BF95-4A123346D2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA238A2-EBD5-4C9F-BF95-4A123346D2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772DA4F0-97AA-4616-85A2-93FCD9EB1E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772DA4F0-97AA-4616-85A2-93FCD9EB1E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772DA4F0-97AA-4616-85A2-93FCD9EB1E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772DA4F0-97AA-4616-85A2-93FCD9EB1E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8673CE-2BA1-4477-9026-A51C6E1FFD8E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

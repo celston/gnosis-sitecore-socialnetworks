@@ -38,6 +38,13 @@ content-length: 85
 
 /sitecore/templates/GnosisSocialNetworks/Base Templates/Twitter/Twitter App Card Base
 ----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 23
+
+NetworkV2/16x16/pda.png
+----field----
 field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
 name: __Thumbnail
 key: __thumbnail
@@ -47,7 +54,7 @@ content-length: 163
 ----version----
 language: en
 version: 1
-revision: 792fe6e7-fbb3-47f6-8a5d-4983f2a78a52
+revision: 35db2d26-cb29-4fe7-b8f4-1ee1377edba0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-792fe6e7-fbb3-47f6-8a5d-4983f2a78a52
+35db2d26-cb29-4fe7-b8f4-1ee1377edba0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150903T151939Z
+20150908T191624Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

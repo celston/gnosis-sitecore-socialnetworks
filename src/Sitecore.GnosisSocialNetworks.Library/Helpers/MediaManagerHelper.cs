@@ -41,15 +41,31 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
 
         #region Public Methods
 
+        public string GetMediaLinkFieldUrl(LinkField field)
+        {
+            if (field.TargetItem == null)
+            {
+                return null;
+            }
+
+            return Sitecore.Resources.Media.MediaManager.GetMediaUrl(field.TargetItem);
+        }
+
         public string GetImageFieldAbsoluteUrl(Item item, string fieldName)
         {
+            Sitecore.Diagnostics.Profiler.StartOperation(String.Format("Loading ImageField {0}", fieldName));
             ImageField field = fieldsHelper.GetImageField(item, fieldName);
+            Sitecore.Diagnostics.Profiler.EndOperation(String.Format("Loading ImageField {0}", fieldName));
             if (field == null || field.MediaItem == null)
             {
                 return null;
             }
 
-            return MediaManager.GetMediaUrl(field.MediaItem, BuildAbsoluteUrlMediaUrlOptions());
+            Sitecore.Diagnostics.Profiler.StartOperation(String.Format("GetMediaUrl {0}", fieldName));
+            string result = MediaManager.GetMediaUrl(field.MediaItem, BuildAbsoluteUrlMediaUrlOptions());
+            Sitecore.Diagnostics.Profiler.EndOperation(String.Format("GetMediaUrl {0}", fieldName));
+
+            return result;
         }
 
         public string GetMediaLinkFieldAbsoluteUrl(LinkField field)
@@ -71,5 +87,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
         }
 
         #endregion
+
+        
     }
 }
