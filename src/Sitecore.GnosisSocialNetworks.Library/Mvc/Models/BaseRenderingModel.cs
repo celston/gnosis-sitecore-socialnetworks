@@ -23,12 +23,14 @@ namespace Sitecore.GnosisSocialNetworks.Library.Mvc.Models
         protected readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
         protected readonly ItemsHelper itemsHelper = ItemsHelper.Instance;
         protected readonly LinksHelper linksHelper = LinksHelper.Instance;
+        protected Rendering rendering;
 
         #endregion
 
         #region Public Properties
 
-        public string RenderingItemMachineName { get; private set; }
+        public Guid Id { get; private set; }
+        public string MachineName { get; private set; }
 
         #endregion
 
@@ -36,7 +38,9 @@ namespace Sitecore.GnosisSocialNetworks.Library.Mvc.Models
 
         public virtual void Initialize(Rendering rendering)
         {
-            RenderingItemMachineName = itemsHelper.GetItemMachineName(rendering.Item);
+            this.rendering = rendering;
+            MachineName = itemsHelper.GetItemMachineName(rendering.Item);
+            Id = rendering.Item.ID.ToGuid();
             
             SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute = this.GetType().GetCustomAttributes<SitecoreFieldNamePrefixAttribute>().FirstOrDefault();
 

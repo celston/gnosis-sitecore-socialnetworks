@@ -56,6 +56,9 @@
     <Compile Include="Attributes\SitecoreFieldRawAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawWithRootFallbackAttribute.cs" />
     <Compile Include="Attributes\SitecoreImageFieldAbsoluteUrlAttribute.cs" />
+    <Compile Include="Attributes\SitecoreImageFieldMimeTypeAttribute.cs" />
+    <Compile Include="Attributes\SitecoreImageFieldWidthAttribute.cs" />
+    <Compile Include="Attributes\SitecoreImageFieldHeightAttribute.cs" />
     <Compile Include="Attributes\SitecoreLinkFieldAbsoluteUrlAttribute.cs" />
     <Compile Include="Attributes\SitecoreLinkFieldUrlAttribute.cs" />
     <Compile Include="Helpers\FieldsHelper.cs" />

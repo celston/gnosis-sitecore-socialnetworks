@@ -15,6 +15,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
         protected readonly LinksHelper linksHelper = LinksHelper.Instance;
         protected readonly ItemsHelper itemsHelper = ItemsHelper.Instance;
         protected readonly MediaManagerHelper mediaManagerHelper = MediaManagerHelper.Instance;
+        protected readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
         
         public abstract object GetValue(SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute, PropertyInfo pi, Rendering rendering);
 
