@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,13 +41,13 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Client">
-      <HintPath>..\..\..\inetpub\sites\sitecoresandbox80\Website\bin\Sitecore.Client.dll</HintPath>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecoresandbox80\Website\bin\Sitecore.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\inetpub\sites\sitecoresandbox80\Website\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecoresandbox80\Website\bin\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\..\inetpub\sites\sitecoresandbox80\Website\bin\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecoresandbox80\Website\bin\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -98,6 +99,7 @@
     <Content Include="Areas\GnosisToolkit\Views\web.config" />
     <Content Include="Areas\GnosisToolkit\Views\General\ContentBlock.cshtml" />
     <Content Include="Areas\GnosisToolkit\Views\General\CallToAction.cshtml" />
+    <Content Include="Areas\GnosisToolkit\Views\Layouts\BasicHtml.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -13,23 +13,23 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
             get { return "app"; }
         }
 
-        [SitecoreFieldRaw("App iPhone Name")]
+        [SitecoreFieldRaw]
         public string AppIphoneName { get; set; }
-        [SitecoreFieldRaw("App iPhone ID")]
+        [SitecoreFieldRaw]
         public string AppIphoneId { get; set; }
-        [SitecoreFieldRaw("App iPhone URL")]
+        [SitecoreFieldRaw]
         public string AppIphoneUrl { get; set; }
-        [SitecoreFieldRaw("App iPad Name")]
+        [SitecoreFieldRaw]
         public string AppIpadName { get; set; }
-        [SitecoreFieldRaw("App iPad ID")]
+        [SitecoreFieldRaw]
         public string AppIpadId { get; set; }
-        [SitecoreFieldRaw("App iPad URL")]
+        [SitecoreFieldRaw]
         public string AppIpadUrl { get; set; }
-        [SitecoreFieldRaw("App Google Play Name")]
+        [SitecoreFieldRaw]
         public string AppGooglePlayName { get; set; }
-        [SitecoreFieldRaw("App Google Play ID")]
+        [SitecoreFieldRaw]
         public string AppGooglePlayId { get; set; }
-        [SitecoreFieldRaw("App Google Play URL")]
+        [SitecoreFieldRaw]
         public string AppGooglePlayUrl { get; set; }
         
         public bool ShowAppIphoneName

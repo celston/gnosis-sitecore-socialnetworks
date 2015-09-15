@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,13 +41,13 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Client">
-      <HintPath>..\..\..\..\..\inetpub\sites\sitecoresandbox80\Website\bin\Sitecore.Client.dll</HintPath>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecoresandbox80\Website\bin\Sitecore.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\..\..\inetpub\sites\sitecoresandbox80\Website\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecoresandbox80\Website\bin\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\..\..\..\inetpub\sites\sitecoresandbox80\Website\bin\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\inetpub\wwwroot\sitecoresandbox80\Website\bin\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -96,8 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\GnosisSocialNetworks\Views\web.config" />
-    <Content Include="Areas\GnosisSocialNetworks\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\GnosisSocialNetworks\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\TwitterSummaryCard.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\_Primary.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\_Secondary.cshtml" />
@@ -107,6 +106,8 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\GnosisSocialNetworks\Controllers\OpenGraphController.cs" />
+    <Compile Include="Areas\GnosisSocialNetworks\Controllers\TwitterController.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\GnosisSocialNetworksAreaRegistration.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphBasicModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\Twitter\TwitterAppCardModel.cs" />
@@ -125,9 +126,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\GnosisSocialNetworks\Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Sitecore.GnosisSocialNetworks.Library\Sitecore.GnosisSocialNetworks.Library.csproj">
       <Project>{afa238a2-ebd5-4c9f-bf95-4a123346d2f9}</Project>

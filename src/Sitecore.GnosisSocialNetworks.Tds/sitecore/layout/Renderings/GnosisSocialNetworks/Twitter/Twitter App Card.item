@@ -6,25 +6,25 @@ path: /sitecore/layout/Renderings/GnosisSocialNetworks/Twitter/Twitter App Card
 parent: {961E34DE-D2BE-40F1-B0C5-738C84E02315}
 name: Twitter App Card
 master: {00000000-0000-0000-0000-000000000000}
-template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
-templatekey: View rendering
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
 
 ----field----
-field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
-name: Path
-key: path
-content-length: 63
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 7
 
-/Areas/GnosisSocialNetworks/Views/Twitter/TwitterAppCard.cshtml
+Twitter
 ----field----
-field: {DDAB263E-B42E-419A-AA6F-081B7393CA38}
-name: Model
-key: model
-content-length: 69
+field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
+name: Controller Action
+key: controller action
+content-length: 14
 
-/sitecore/layout/Models/GnosisSocialNetworks/Twitter/Twitter App Card
+TwitterAppCard
 ----field----
-field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
+field: {94069F66-609C-48B0-8281-521C30FB269D}
 name: Open Properties after Add
 key: open properties after add
 content-length: 1
@@ -54,7 +54,7 @@ content-length: 163
 ----version----
 language: en
 version: 1
-revision: 35db2d26-cb29-4fe7-b8f4-1ee1377edba0
+revision: eea7b2e7-8e6e-40ed-945a-716fd3321772
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-35db2d26-cb29-4fe7-b8f4-1ee1377edba0
+eea7b2e7-8e6e-40ed-945a-716fd3321772
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150908T191624Z
+20150915T181431Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

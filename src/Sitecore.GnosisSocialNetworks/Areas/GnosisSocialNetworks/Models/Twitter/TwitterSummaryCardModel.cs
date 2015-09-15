@@ -23,7 +23,7 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
 
         [SitecoreFieldRaw]
         public string Creator { get; set; }
-        [SitecoreFieldRaw("Creator ID")]
+        [SitecoreFieldRaw]
         public string CreatorId { get; set; }
 
         public bool ShowCreator

@@ -16,13 +16,13 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitte
 
         [SitecoreFieldRaw]
         public string Player { get; set; }
-        [SitecoreFieldRaw("Player Height")]
+        [SitecoreFieldRaw]
         public string PlayerHeight { get; set; }
-        [SitecoreFieldRaw("Player Width")]
+        [SitecoreFieldRaw]
         public string PlayerWidth { get; set; }
         [SitecoreLinkFieldAbsoluteUrl("Player Stream")]
         public string PlayerStream { get; set; }
-        [SitecoreFieldRaw("Stream Content Type")]
+        [SitecoreFieldRaw]
         public string PlayerStreamContentType { get; set; }
 
         public bool ShowPlayerStream

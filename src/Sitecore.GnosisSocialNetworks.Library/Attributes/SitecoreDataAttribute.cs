@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 using Sitecore.Mvc.Presentation;
 using Sitecore.GnosisSocialNetworks.Library.Helpers;
+using System.Text.RegularExpressions;
 
 namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 {
@@ -25,7 +22,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
             {
                 if (String.IsNullOrWhiteSpace(fieldName))
                 {
-                    return pi.Name;
+                    return SplitCamelCase(pi.Name);
                 }
 
                 return fieldName;
@@ -33,10 +30,15 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 
             if (String.IsNullOrWhiteSpace(fieldName))
             {
-                return String.Format("{0} {1}", fieldNamePrefixAttribute.FieldNamePrefix, pi.Name);
+                return String.Format("{0} {1}", fieldNamePrefixAttribute.FieldNamePrefix, SplitCamelCase(pi.Name));
             }
 
             return String.Format("{0} {1}", fieldNamePrefixAttribute.FieldNamePrefix, fieldName);
+        }
+
+        protected string SplitCamelCase(string input)
+        {
+            return String.Join(" ", Regex.Split(input, "(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])"));
         }
     }
 }

@@ -6,13 +6,20 @@ path: /sitecore/layout/Renderings/GnosisSocialNetworks
 parent: {32566F0E-7686-45F1-A12F-D7260BD78BC3}
 name: GnosisSocialNetworks
 master: {00000000-0000-0000-0000-000000000000}
-template: {7EE0975B-0698-493E-B3A2-0B2EF33D0522}
-templatekey: Rendering Folder
+template: {98FBC44C-FE19-4095-BAF5-50F9E87BD170}
+templatekey: Rendering Folder with Area
 
+----field----
+field: {AE70CFBB-D5F5-4052-AE8F-90F628AB3B97}
+name: Area Name
+key: area name
+content-length: 20
+
+GnosisSocialNetworks
 ----version----
 language: en
 version: 1
-revision: ed7d4bab-8a90-4fc8-a3d9-913ae45e018b
+revision: f347fd73-f40c-4b63-a7ca-8f4a67e12d23
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed7d4bab-8a90-4fc8-a3d9-913ae45e018b
+f347fd73-f40c-4b63-a7ca-8f4a67e12d23
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150901T170724Z
+20150915T160609Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
