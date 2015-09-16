@@ -11,6 +11,34 @@ namespace Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts
         public string FaviconPath { get; set; }
         [SitecoreImageFieldMimeTypeWithRootFallback("Favicon", "Favicon")]
         public string FaviconMimeType { get; set; }
+        [SitecoreFieldRaw]
+        public string HtmlTitleName { get; set; }
+        [SitecoreFieldRaw]
+        public string HtmlTitleSection { get; set; }
+        [SitecoreFieldRaw]
+        public string HtmlTitleOverride { get; set; }
+        [SitecoreRootFieldRaw]
+        public string HtmlTitleFormat { get; set; }
+
+        public string HtmlTitle
+        {
+            get
+            {
+                if (!String.IsNullOrWhiteSpace(HtmlTitleOverride))
+                {
+                    return HtmlTitleOverride;
+                }
+
+                try
+                {
+                    return String.Format(HtmlTitleFormat, HtmlTitleName, HtmlTitleSection);
+                }
+                catch (FormatException)
+                {
+                    return null;
+                }
+            }
+        }
 
         public bool ShowFavicon
         {

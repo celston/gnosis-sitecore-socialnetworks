@@ -1,0 +1,5 @@
+﻿@model Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts.BasicHtml
+@if (Model.ShowFavicon)
+{
+    <link rel="icon" type="@Model.FaviconMimeType" href="@Model.FaviconPath" />
+}

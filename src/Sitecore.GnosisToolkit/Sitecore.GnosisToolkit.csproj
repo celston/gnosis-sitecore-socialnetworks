@@ -100,6 +100,9 @@
     <Content Include="Areas\GnosisToolkit\Views\General\ContentBlock.cshtml" />
     <Content Include="Areas\GnosisToolkit\Views\General\CallToAction.cshtml" />
     <Content Include="Areas\GnosisToolkit\Views\Layouts\BasicHtml.cshtml" />
+    <Content Include="Areas\GnosisToolkit\Views\Layouts\_Canonical.cshtml" />
+    <Content Include="Areas\GnosisToolkit\Views\Layouts\_Title.cshtml" />
+    <Content Include="Areas\GnosisToolkit\Views\Layouts\_Favicon.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -3,11 +3,10 @@
 <html lang="@Model.Lang">
 <head>
     <meta charset="utf-8"/>
-    <link rel="canonical" href="@Model.CanonicalUrl"/>
-    @if (Model.ShowFavicon)
-    {
-        <link rel="icon" type="@Model.FaviconMimeType" href="@Model.FaviconPath"/>
-    }
+    @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Canonical.cshtml")
+    @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Title.cshtml")
+    @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Favicon.cshtml")
+
     <!--head start-->
     @Html.Sitecore().Placeholder("head")
     <!--head end-->

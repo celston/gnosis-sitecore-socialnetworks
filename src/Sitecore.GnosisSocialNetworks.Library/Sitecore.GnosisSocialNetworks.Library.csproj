@@ -81,6 +81,7 @@
     <Compile Include="Attributes\SitecoreDataAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldNamePrefixAttribute.cs" />
+    <Compile Include="Attributes\SitecoreRootFieldRawAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawRegexSplitAttribute.cs" />
     <Compile Include="Attributes\SitecoreImageFieldMimeTypeWithRootFallbackAttribute.cs" />
