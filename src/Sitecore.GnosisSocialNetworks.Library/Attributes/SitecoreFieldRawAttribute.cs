@@ -12,7 +12,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
     [AttributeUsage(AttributeTargets.Property)]
     public class SitecoreFieldRawAttribute : SitecoreDataAttribute
     {
-        public string FieldName { get; private set; }
+        public string FieldName { get; protected set; }
 
         #region Constructors
 

@@ -9,7 +9,7 @@ using Sitecore.GnosisSocialNetworks.Library.Attributes;
 namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.Twitter
 {
     [SitecoreFieldNamePrefix("Twitter Card")]
-    public abstract class TwitterCardModel : BaseRenderingModel
+    public abstract class TwitterCardModel
     {
         public abstract string CardType { get; }
 

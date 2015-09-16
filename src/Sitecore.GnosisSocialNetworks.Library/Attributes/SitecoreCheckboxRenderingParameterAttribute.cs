@@ -4,9 +4,13 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 {
     public class SitecoreCheckboxRenderingParameterAttribute : SitecoreDataAttribute
     {
+        #region Public Properties
+
         public string FieldName { get; set; }
 
-        #region Constructor
+        #endregion
+
+        #region Constructors
 
         public SitecoreCheckboxRenderingParameterAttribute()
         {
@@ -19,10 +23,14 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 
         #endregion
 
+        #region SitecoreDataAttribute Implementation
+
         public override object GetValue(SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute, System.Reflection.PropertyInfo pi, Sitecore.Mvc.Presentation.Rendering rendering)
         {
             string fieldName = ResolveFieldName(fieldNamePrefixAttribute, pi, FieldName);
             return rendering.Parameters[fieldName] == "1";
         }
+
+        #endregion
     }
 }

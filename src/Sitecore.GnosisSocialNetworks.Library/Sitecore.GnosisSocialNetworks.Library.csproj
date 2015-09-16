@@ -82,6 +82,7 @@
     <Compile Include="Attributes\SitecoreFieldAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldNamePrefixAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawAttribute.cs" />
+    <Compile Include="Attributes\SitecoreFieldRawRegexSplitAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawWithRootFallbackAttribute.cs" />
     <Compile Include="Attributes\SitecoreImageFieldAbsoluteUrlAttribute.cs" />
     <Compile Include="Attributes\SitecoreImageFieldMimeTypeAttribute.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Attributes\SitecoreImageFieldHeightAttribute.cs" />
     <Compile Include="Attributes\SitecoreLinkFieldAbsoluteUrlAttribute.cs" />
     <Compile Include="Attributes\SitecoreLinkFieldUrlAttribute.cs" />
+    <Compile Include="Attributes\SitecoreMultilistFieldAbsoluteUrlsAttribute.cs" />
     <Compile Include="Helpers\FieldsHelper.cs" />
     <Compile Include="Helpers\ItemsHelper.cs" />
     <Compile Include="Helpers\LinksHelper.cs" />

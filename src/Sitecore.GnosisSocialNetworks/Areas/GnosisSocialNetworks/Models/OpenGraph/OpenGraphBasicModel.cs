@@ -9,7 +9,7 @@ using Sitecore.GnosisSocialNetworks.Library.Attributes;
 namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.OpenGraph
 {
     [SitecoreFieldNamePrefix("Open Graph")]
-    public class OpenGraphBasicModel : BaseRenderingModel
+    public class OpenGraphBasicModel
     {
         [SitecoreFieldRaw]
         public string Title { get; set; }
@@ -23,11 +23,14 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.OpenGr
         public int ImageWidth { get; set; }
         [SitecoreImageFieldMimeType("Image")]
         public string ImageMimeType { get; set; }
+        [SitecoreFieldRaw]
+        public string Determiner { get; set; }
+        [SitecoreLinkFieldAbsoluteUrl("Audio")]
+        public string AudioUrl { get; set; }
+        [SitecoreLinkFieldAbsoluteUrl("Video")]
+        public string VideoUrl { get; set; }
 
-        public string Locale
-        {
-            get { return rendering.Item.Language.CultureInfo.TextInfo.CultureName.Replace("-", "_"); }
-        }
+        public string Locale { get; set; }
 
         public bool ShowDescription
         {
@@ -39,5 +42,19 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.OpenGr
             get { return !String.IsNullOrWhiteSpace(ImageUrl); }
         }
         
+        public bool ShowDeterminer
+        {
+            get { return !String.IsNullOrWhiteSpace(Determiner); }
+        }
+
+        public bool ShowAudio
+        {
+            get { return !String.IsNullOrWhiteSpace(AudioUrl); }
+        }
+
+        public bool ShowVideo
+        {
+            get { return !String.IsNullOrWhiteSpace(VideoUrl); }
+        }
     }
 }

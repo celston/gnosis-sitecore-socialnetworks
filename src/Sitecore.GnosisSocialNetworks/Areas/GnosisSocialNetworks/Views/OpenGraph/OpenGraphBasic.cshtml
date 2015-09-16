@@ -13,3 +13,15 @@
     <meta property="og:image:height" content="@Model.ImageWidth" />
     <meta property="og:image:type" content="@Model.ImageMimeType"/>
 }
+@if (Model.ShowDeterminer)
+{
+    <meta property="og:determiner" content="@Model.Determiner"/>
+}
+@if (Model.ShowAudio)
+{
+    <meta property="og:audio" content="@Model.AudioUrl"/>
+}
+@if (Model.ShowVideo)
+{
+    <meta property="og:video" content="@Model.VideoUrl"/>
+}

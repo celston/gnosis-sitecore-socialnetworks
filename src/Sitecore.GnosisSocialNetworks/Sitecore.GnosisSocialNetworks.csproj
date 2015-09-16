@@ -103,13 +103,17 @@
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\TwitterAppCard.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\Twitter\TwitterPlayerCard.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\OpenGraph\OpenGraphBasic.cshtml" />
+    <Content Include="Areas\GnosisSocialNetworks\Views\OpenGraph\OpenGraphArticle.cshtml" />
+    <Content Include="Areas\GnosisSocialNetworks\Views\OpenGraph\OpenGraphProfile.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\GnosisSocialNetworks\Controllers\OpenGraphController.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Controllers\TwitterController.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\GnosisSocialNetworksAreaRegistration.cs" />
+    <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphArticleModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphBasicModel.cs" />
+    <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphProfileModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\Twitter\TwitterAppCardModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\Twitter\TwitterCardModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\Twitter\TwitterPlayerCardModel.cs" />
