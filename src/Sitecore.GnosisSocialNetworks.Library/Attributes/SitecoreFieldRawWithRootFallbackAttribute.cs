@@ -11,6 +11,16 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
         public string ItemFieldName { get; set; }
         public string RootFieldName { get; set; }
 
+        public SitecoreFieldRawWithRootFallbackAttribute()
+        {
+        }
+
+        public SitecoreFieldRawWithRootFallbackAttribute(string sharedFieldName)
+        {
+            ItemFieldName = sharedFieldName;
+            RootFieldName = sharedFieldName;
+        }
+
         public SitecoreFieldRawWithRootFallbackAttribute(string itemFieldName, string rootFieldName)
         {
             ItemFieldName = itemFieldName;

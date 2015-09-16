@@ -9,14 +9,34 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 {
     public class SitecoreImageFieldPathWithRootFallbackAttribute : SitecoreDataAttribute
     {
-        public string ItemFieldName { get; set; }
-        public string RootFieldName { get; set; }
+        #region Public Properties
+
+        public string ItemFieldName { get; protected set; }
+        public string RootFieldName { get; protected set; }
+
+        #endregion
+
+        #region Constructors
+
+        public SitecoreImageFieldPathWithRootFallbackAttribute()
+        {
+        }
+
+        public SitecoreImageFieldPathWithRootFallbackAttribute(string sharedFieldName)
+        {
+            ItemFieldName = sharedFieldName;
+            RootFieldName = sharedFieldName;
+        }
 
         public SitecoreImageFieldPathWithRootFallbackAttribute(string itemFieldName, string rootFieldName)
         {
             ItemFieldName = itemFieldName;
             RootFieldName = rootFieldName;
         }
+
+        #endregion
+
+        #region SitecoreDataAttribute Implementation
 
         public override object GetValue(SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute, System.Reflection.PropertyInfo pi, Sitecore.Mvc.Presentation.Rendering rendering)
         {
@@ -31,5 +51,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 
             return result;
         }
+
+        #endregion
     }
 }

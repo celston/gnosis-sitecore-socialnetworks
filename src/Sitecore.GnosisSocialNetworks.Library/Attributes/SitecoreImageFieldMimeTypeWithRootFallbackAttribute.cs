@@ -7,14 +7,32 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
 {
     public class SitecoreImageFieldMimeTypeWithRootFallbackAttribute : SitecoreDataAttribute
     {
-        public string ItemFieldName { get; set; }
-        public string RootFieldName { get; set; }
+        #region Public Properties
+
+        public string ItemFieldName { get; protected set; }
+        public string RootFieldName { get; protected set; }
+
+        #endregion
+
+        #region Constructors
+
+        public SitecoreImageFieldMimeTypeWithRootFallbackAttribute()
+        {
+        }
+
+        public SitecoreImageFieldMimeTypeWithRootFallbackAttribute(string sharedFieldName)
+        {
+            ItemFieldName = sharedFieldName;
+            RootFieldName = sharedFieldName;
+        }
 
         public SitecoreImageFieldMimeTypeWithRootFallbackAttribute(string itemFieldName, string rootFieldName)
         {
             ItemFieldName = itemFieldName;
             RootFieldName = rootFieldName;
         }
+
+        #endregion
 
         public override object GetValue(SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute, System.Reflection.PropertyInfo pi, Sitecore.Mvc.Presentation.Rendering rendering)
         {

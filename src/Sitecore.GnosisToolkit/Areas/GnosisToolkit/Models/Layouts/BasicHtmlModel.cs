@@ -7,9 +7,9 @@ namespace Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts
 {
     public class BasicHtmlModel : BaseRenderingModel
     {
-        [SitecoreImageFieldPathWithRootFallback("Favicon", "Favicon")]
+        [SitecoreImageFieldPathWithRootFallback("Favicon")]
         public string FaviconPath { get; set; }
-        [SitecoreImageFieldMimeTypeWithRootFallback("Favicon", "Favicon")]
+        [SitecoreImageFieldMimeTypeWithRootFallback("Favicon")]
         public string FaviconMimeType { get; set; }
         [SitecoreFieldRaw]
         public string HtmlTitleName { get; set; }

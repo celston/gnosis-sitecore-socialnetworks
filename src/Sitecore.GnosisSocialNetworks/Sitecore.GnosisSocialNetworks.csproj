@@ -105,12 +105,15 @@
     <Content Include="Areas\GnosisSocialNetworks\Views\OpenGraph\OpenGraphBasic.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\OpenGraph\OpenGraphArticle.cshtml" />
     <Content Include="Areas\GnosisSocialNetworks\Views\OpenGraph\OpenGraphProfile.cshtml" />
+    <Content Include="Areas\GnosisSocialNetworks\Views\Facebook\FacebookAppId.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\GnosisSocialNetworks\Controllers\FacebookController.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Controllers\OpenGraphController.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Controllers\TwitterController.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\GnosisSocialNetworksAreaRegistration.cs" />
+    <Compile Include="Areas\GnosisSocialNetworks\Models\Facebook\FacebookAppIdModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphArticleModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphBasicModel.cs" />
     <Compile Include="Areas\GnosisSocialNetworks\Models\OpenGraph\OpenGraphProfileModel.cs" />
@@ -122,6 +125,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Site.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

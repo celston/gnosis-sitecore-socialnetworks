@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {3596C972-CD85-45BD-AAAD-9FD2D27E21E4}
+id: {0C4102C0-80B0-4657-8BBB-DDA878653262}
 database: master
-path: /sitecore/templates/GnosisSocialNetworks/Field Sections/Open Graph/Open Graph Profile Fields/Open Graph Information
-parent: {4A30F912-B5BD-453C-913B-6232470BA4C3}
+path: /sitecore/templates/GnosisSocialNetworks/Field Sections/Open Graph/Open Graph Site Override Fields/Open Graph Information
+parent: {8CAF213F-FEE5-4359-A147-81D36A2081C0}
 name: Open Graph Information
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
@@ -15,11 +15,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-103
+101
 ----version----
 language: en
 version: 1
-revision: 493fed7f-0686-4ea9-b06a-07c01dc36846
+revision: 049871bf-2ded-4ec6-8141-68905e383829
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150916T125109Z
+20150916T142721Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-493fed7f-0686-4ea9-b06a-07c01dc36846
+049871bf-2ded-4ec6-8141-68905e383829
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150916T143740Z
+20150916T143639Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
