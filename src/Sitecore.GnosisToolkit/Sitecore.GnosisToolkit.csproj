@@ -103,13 +103,14 @@
     <Content Include="Areas\GnosisToolkit\Views\Layouts\_Canonical.cshtml" />
     <Content Include="Areas\GnosisToolkit\Views\Layouts\_Title.cshtml" />
     <Content Include="Areas\GnosisToolkit\Views\Layouts\_Favicon.cshtml" />
+    <Content Include="Areas\GnosisToolkit\Views\Layouts\_Meta.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\GnosisToolkit\GnosisToolkitAreaRegistration.cs" />
     <Compile Include="Areas\GnosisToolkit\Models\General\CallToActionModel.cs" />
     <Compile Include="Areas\GnosisToolkit\Models\General\ContentBlockModel.cs" />
-    <Compile Include="Areas\GnosisToolkit\Models\Layouts\BasicHtml.cs" />
+    <Compile Include="Areas\GnosisToolkit\Models\Layouts\BasicHtmlModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

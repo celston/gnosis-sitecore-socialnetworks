@@ -5,7 +5,7 @@ using Sitecore.GnosisSocialNetworks.Library.Attributes;
 
 namespace Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts
 {
-    public class BasicHtml : BaseRenderingModel
+    public class BasicHtmlModel : BaseRenderingModel
     {
         [SitecoreImageFieldPathWithRootFallback("Favicon", "Favicon")]
         public string FaviconPath { get; set; }
@@ -19,6 +19,12 @@ namespace Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts
         public string HtmlTitleOverride { get; set; }
         [SitecoreRootFieldRaw]
         public string HtmlTitleFormat { get; set; }
+        [SitecoreFieldRaw]
+        public string MetaKeywords { get; set; }
+        [SitecoreFieldRaw]
+        public string MetaDescription { get; set; }
+        [SitecoreFieldRaw]
+        public string MetaAuthor { get; set; }
 
         public string HtmlTitle
         {
@@ -53,6 +59,21 @@ namespace Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts
         public string CanonicalUrl
         {
             get { return linksHelper.GetItemAbsoluteUrl(rendering.Item); }
+        }
+
+        public bool ShowMetaKeywords
+        {
+            get { return !String.IsNullOrWhiteSpace(MetaKeywords); }
+        }
+
+        public bool ShowMetaDescription
+        {
+            get { return !String.IsNullOrWhiteSpace(MetaDescription); }
+        }
+
+        public bool ShowMetaAuthor
+        {
+            get { return !String.IsNullOrWhiteSpace(MetaAuthor); }
         }
     }
 }

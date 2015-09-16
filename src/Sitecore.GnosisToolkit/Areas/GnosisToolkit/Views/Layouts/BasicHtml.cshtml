@@ -1,4 +1,4 @@
-﻿@model Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts.BasicHtml
+﻿@model Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts.BasicHtmlModel
 
 <html lang="@Model.Lang">
 <head>
@@ -6,6 +6,7 @@
     @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Canonical.cshtml")
     @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Title.cshtml")
     @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Favicon.cshtml")
+    @Html.Partial("~/Areas/GnosisToolkit/Views/Layouts/_Meta.cshtml")
 
     <!--head start-->
     @Html.Sitecore().Placeholder("head")
