@@ -34,7 +34,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
 
         #region Protected Fields
 
-        protected readonly MediaManagerHelper mediaManagerHelper = MediaManagerHelper.Instance;
+        protected readonly MediaHelper mediaHelper = MediaHelper.Instance;
         protected readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
 
         #endregion
@@ -86,7 +86,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
                 case "internal":
                     return GetItemUrl(field.TargetItem);
                 case "media":
-                    return mediaManagerHelper.GetMediaLinkFieldUrl(field);
+                    return mediaHelper.GetMediaLinkFieldUrl(field);
                 case "anchor":
                     // Prefix anchor link with # if link if not empty
                     return !string.IsNullOrEmpty(field.Anchor) ? "#" + field.Anchor : string.Empty;
@@ -108,7 +108,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Helpers
                 case "internal":
                     return GetItemAbsoluteUrl(field.TargetItem);
                 case "media":
-                    return mediaManagerHelper.GetMediaLinkFieldAbsoluteUrl(field);
+                    return mediaHelper.GetMediaLinkFieldAbsoluteUrl(field);
                 case "anchor":
                     // Prefix anchor link with # if link if not empty
                     return !string.IsNullOrEmpty(field.Anchor) ? "#" + field.Anchor : string.Empty;

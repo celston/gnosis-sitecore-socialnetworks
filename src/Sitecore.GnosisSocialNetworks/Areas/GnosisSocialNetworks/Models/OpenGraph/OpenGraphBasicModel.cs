@@ -11,6 +11,8 @@ namespace Sitecore.GnosisSocialNetworks.Areas.GnosisSocialNetworks.Models.OpenGr
     [SitecoreFieldNamePrefix("Open Graph")]
     public class OpenGraphBasicModel
     {
+        [SitecoreFieldRawWithRootFallback("Site Name Override", "Site Name")]
+        public string SiteName { get; set; }
         [SitecoreFieldRaw]
         public string Title { get; set; }
         [SitecoreFieldRaw]

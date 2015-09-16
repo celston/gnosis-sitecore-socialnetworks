@@ -1,5 +1,13 @@
-﻿<html lang="@Model.Item.Language.CultureInfo.TwoLetterISOLanguageName">
+﻿@model Sitecore.GnosisToolkit.Areas.GnosisToolkit.Models.Layouts.BasicHtml
+
+<html lang="@Model.Lang">
 <head>
+    <meta charset="utf-8"/>
+    <link rel="canonical" href="@Model.CanonicalUrl"/>
+    @if (Model.ShowFavicon)
+    {
+        <link rel="icon" type="@Model.FaviconMimeType" href="@Model.FaviconPath"/>
+    }
     <!--head start-->
     @Html.Sitecore().Placeholder("head")
     <!--head end-->

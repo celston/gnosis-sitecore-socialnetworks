@@ -83,6 +83,8 @@
     <Compile Include="Attributes\SitecoreFieldNamePrefixAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawRegexSplitAttribute.cs" />
+    <Compile Include="Attributes\SitecoreImageFieldMimeTypeWithRootFallbackAttribute.cs" />
+    <Compile Include="Attributes\SitecoreImageFieldPathWithRootFallbackAttribute.cs" />
     <Compile Include="Attributes\SitecoreFieldRawWithRootFallbackAttribute.cs" />
     <Compile Include="Attributes\SitecoreImageFieldAbsoluteUrlAttribute.cs" />
     <Compile Include="Attributes\SitecoreImageFieldMimeTypeAttribute.cs" />
@@ -94,7 +96,7 @@
     <Compile Include="Helpers\FieldsHelper.cs" />
     <Compile Include="Helpers\ItemsHelper.cs" />
     <Compile Include="Helpers\LinksHelper.cs" />
-    <Compile Include="Helpers\MediaManagerHelper.cs" />
+    <Compile Include="Helpers\MediaHelper.cs" />
     <Compile Include="Mvc\Controllers\BaseController.cs" />
     <Compile Include="Mvc\Models\BaseRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

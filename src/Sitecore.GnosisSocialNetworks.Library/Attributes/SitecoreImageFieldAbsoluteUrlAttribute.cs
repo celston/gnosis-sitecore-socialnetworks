@@ -32,7 +32,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
         public override object GetValue(SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute, System.Reflection.PropertyInfo pi, Sitecore.Mvc.Presentation.Rendering rendering)
         {
             string fieldName = ResolveFieldName(fieldNamePrefixAttribute, pi, FieldName);
-            return mediaManagerHelper.GetImageFieldAbsoluteUrl(rendering.Item, fieldName);
+            return mediaHelper.GetImageFieldMediaItemAbsoluteUrl(rendering.Item, fieldName);
         }
 
         #endregion

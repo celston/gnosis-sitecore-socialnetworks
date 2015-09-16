@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
-using Sitecore.Data.Fields;
-using Sitecore.Data.Items;
-using Sitecore.Resources.Media;
 using Sitecore.Mvc.Presentation;
 
 using Sitecore.GnosisSocialNetworks.Library.Helpers;
 using System.Reflection;
 using Sitecore.GnosisSocialNetworks.Library.Attributes;
-using System.Diagnostics;
 
 namespace Sitecore.GnosisSocialNetworks.Library.Mvc.Models
 {
@@ -19,7 +13,7 @@ namespace Sitecore.GnosisSocialNetworks.Library.Mvc.Models
     {
         #region Protected Fields
 
-        protected readonly MediaManagerHelper mediaManagerHelper = MediaManagerHelper.Instance;
+        protected readonly MediaHelper mediaHelper = MediaHelper.Instance;
         protected readonly FieldsHelper fieldsHelper = FieldsHelper.Instance;
         protected readonly ItemsHelper itemsHelper = ItemsHelper.Instance;
         protected readonly LinksHelper linksHelper = LinksHelper.Instance;

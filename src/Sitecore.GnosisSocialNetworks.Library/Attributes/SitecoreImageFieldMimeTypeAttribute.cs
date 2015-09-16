@@ -33,21 +33,8 @@ namespace Sitecore.GnosisSocialNetworks.Library.Attributes
         public override object GetValue(SitecoreFieldNamePrefixAttribute fieldNamePrefixAttribute, System.Reflection.PropertyInfo pi, Sitecore.Mvc.Presentation.Rendering rendering)
         {
             string fieldName = ResolveFieldName(fieldNamePrefixAttribute, pi, FieldName);
-            ImageField field = fieldsHelper.GetImageField(rendering.Item, fieldName);
 
-            if (field == null || field.MediaItem == null)
-            {
-                return null;
-            }
-
-            MediaItem mediaItem = new MediaItem(field.MediaItem);
-
-            if (mediaItem == null)
-            {
-                return null;
-            }
-
-            return mediaItem.MimeType;
+            return mediaHelper.GetImageFieldMediaItemMimeType(rendering.Item, fieldName);
         }
     }
 }

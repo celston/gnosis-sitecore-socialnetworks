@@ -106,6 +106,7 @@
     <Compile Include="Areas\GnosisToolkit\GnosisToolkitAreaRegistration.cs" />
     <Compile Include="Areas\GnosisToolkit\Models\General\CallToActionModel.cs" />
     <Compile Include="Areas\GnosisToolkit\Models\General\ContentBlockModel.cs" />
+    <Compile Include="Areas\GnosisToolkit\Models\Layouts\BasicHtml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
